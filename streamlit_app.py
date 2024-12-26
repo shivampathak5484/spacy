@@ -1,17 +1,5 @@
 import streamlit as st
 import random
-import subprocess
-import sys
-
-# Function to install spaCy model
-def install_model():
-    try:
-        subprocess.check_call([sys.executable, '-m', 'spacy', 'download', 'en_core_web_sm'])
-    except Exception as e:
-        print(f"An error occurred while installing the model: {e}")
-
-# Call the function to ensure the model is installed
-install_model()
 
 import spacy
 
